@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/css/inicio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<main>
+    <nav class="contenedorNav">
+        <p class="nombre">
+            Santiago Giraldo Trujillo
+        </p>
+        <div class="Navlinks">
+            <li><a href="/proyectos-personales">Proyectos Personales</a></li>
+            <li><a href="/acerca">Acerca</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </div>
+        <div class="NavIcono">
+            <svg class="Icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(168, 168, 168);"><path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"></path></svg>
+        </div>
+    </nav>
+    <div class="ContenidoPrincipal">
+        <section class="SecInfoPer">
+            <h3>Informacion Personal</h3>
+            <p>Me presento como Santiago Giraldo Trujillo, tengo 16 años y actualmente estoy cursando bachillerato mientras participo en clases particulares a través de un programa de estudio. Poseo un nivel avanzado de inglés. Hace aproximadamente cinco meses, me adentré en el mundo de la programación. Esta aventura comenzó gracias a la recomendación de amigos y ha desencadenado una serie de eventos que me han llevado a mi actual posición. En este momento, me encuentro inmerso en un proceso de formación en Spring Boot para Java. Aunque es un desafío complicado, me apasiona la idea de dominar este Framework y todo lo relacionado con él.</p>
+        </section>
+        <section class="SecEstuHabili">
+            <div class="SecEstudios">
+                <h1>Estudios</h1>
+                <p>En la actualidad, estoy cursando el bachillerato con especialización en sistemas y ensamblaje de equipos de cómputo. Además, poseo un certificado en inglés,</p>
+            </div>
+            <div class="SecHabilidades">
+                <h1>Habilidades</h1>
+                <table class="TablaContenidos">
+                    <thead>
+                    <tr>
+                        <th>Habilidad</th>
+                        <th>Descripción de la Habilidad</th>
+                        <th>Tiempo y Experiencia</th>
+                        <th>Aplicaciones y uso</th>
+                        <th>Consejos o recomendaciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Utiliza Thymeleaf para iterar sobre la lista de habilidades y mostrar las propiedades -->
+                    <tr th:each="habilidad : ${habilidades}">
+                        <td th:text="${habilidad.nombre}"></td>
+                        <td th:text="${habilidad.habilidad}"></td>
+                        <td th:text="${habilidad.tiempo}"></td>
+                        <td th:text="${habilidad.aplicaciones}"></td>
+                        <td th:text="${habilidad.consejo}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+</html>

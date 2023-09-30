@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/pp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Proyectos Personales</title>
+</head>
+<body>
+<div class="contenedor-principal">
+    <section class="contenedor-bloques">
+        <section class="barra-principal">
+            <div class="barra-principal__contenido">
+                <h1 class="barra-principal__titulo" th:text="${informacion.titulo}"></h1>
+            </div>
+        </section>
+        <div class="contenedor-imagenes">
+            <section class="contenedor-bloques__contenido" th:each="caja, iterStat : ${cajas}">
+                <section class="bloque-contenido">
+                    <img th:src="${imagenes[iterStat.index].url}" th:alt="${imagenes[iterStat.index].descripcion}">
+                    <p class="bloque-contenido__titulo" th:text="${caja.tituloCaja}"></p>
+                    <p class="bloque-contenido__texto" th:text="${caja.contenidoCaja}"></p>
+                </section>
+            </section>
+        </div>
+
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedorNav {
+    background-color: #333;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 5px rgb(155, 155, 155);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 23px;
+}
+.nombre {
+    font-weight: 400;
+    padding: 5px;
+    margin: 10px;
+}
+.Navlinks {
+    display: flex;
+    justify-content: center;
+}
+
+.Navlinks li {
+    font-weight: 300;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid white;
+    box-shadow: 0 0 2px rgb(155, 155, 155);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+.Navlinks li:hover {
+    background-color: #969696;
+    color: black;
+}
+
+.Navlinks li a {
+    color: white;
+    text-decoration: none;
+}
+
+.Icon {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+
+}
+
+.ContenidoPrincipal {
+    display: flex;
+}
+
+.SecInfoPer {
+    background-color: #333;
+    color: white;
+    max-width: 20%;
+    margin: 30px;
+    border: 1px solid black;
+    box-shadow: 0 0 2px rgb(155, 155, 155);
+}
+
+.SecInfoPer h3 {
+    font-weight: 400;
+    text-align: center;
+    margin-top:  0;
+    padding: 50px 30px;
+}
+
+.SecInfoPer p {
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.SecEstuHabili {
+    background-color: #333;
+    color: white;
+    margin: 30px;
+    border: 1px solid black;
+    box-shadow: 0 0 2px rgb(155, 155, 155);
+}
+
+.SecEstudios {
+    margin: 50px;
+}
+
+.SecEstudios h1 {
+    font-weight: 400;
+    color: white
+}
+.SecEstudios p {
+    font-weight: 300;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.SecHabilidades {
+    margin: 50px;
+}
+
+.SecHabilidades h1 {
+    font-weight: 400;
+}
+
+.TablaContenidos {
+    color: black;
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+    text-align: center;
+}
+
+.TablaContenidos th {
+    font-weight: 400;
+    background-color: #eee;
+    box-shadow: 0 0 2px rgba(155, 155, 155, 1);
+    padding: 20px;
+}
+
+.TablaContenidos td {
+    background-color: #eee;
+    font-weight: 300;
+    box-shadow: 0 0 2px rgba(155, 155, 155, 0.5);
+    padding: 20px;
+}
